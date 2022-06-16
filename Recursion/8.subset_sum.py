@@ -11,7 +11,6 @@ def subset_sum(lst, s, curr=[], i=0, count=0):
 
 if __name__ == "__main__":
     lst = list(map(int, input("enter the values: ").split()))
-    print(lst)
     s = int(input("enter the sum value to match: "))
     count = subset_sum(lst, s)
     print(count)
