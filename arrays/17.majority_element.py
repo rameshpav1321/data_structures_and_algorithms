@@ -13,7 +13,7 @@ def majority_element(lst):
 
 
 if __name__ == "__main__":
-    lst = [6, 8, 7, 7, 8]
+    lst = [6, 8, 7, 8, 7, 7, 7]
     res = majority_element(lst)
     count = 0
     for i in range(len(lst)):

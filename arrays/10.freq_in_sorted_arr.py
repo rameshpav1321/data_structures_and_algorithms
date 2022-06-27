@@ -11,4 +11,4 @@ def sorted_freq(lst):
     print(curr_var, "count is", count)
 
 
-sorted_freq([10, 10, 20, 30, 30, 40, 55, 55])
+sorted_freq([10, 10, 20, 30, 40, 55, 55])

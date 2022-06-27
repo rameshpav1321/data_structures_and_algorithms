@@ -1,7 +1,7 @@
 # another way to solve is to reverse elements: O(1) space
-# reverse(lst,0,n-1)
-# reverse(lst,n,le-1)
-# reverse(lst,0,le-1)
+# array_reverse(lst,0,n-1)
+# array_reverse(lst,n,le-1)
+# array_reverse(lst,0,le-1)
 
 def left_rotate(lst, n):
     le = len(lst)
@@ -11,7 +11,7 @@ def left_rotate(lst, n):
     for i in range(n, len(lst)):
         lst[i-n] = lst[i]
     for i in range(n):
-        lst[(le-1)-i] = temp[(n-1)-i]
+        lst[(le-n)+i] = temp[i]
     return lst
 
 

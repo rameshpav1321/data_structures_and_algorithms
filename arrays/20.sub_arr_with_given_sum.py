@@ -12,4 +12,4 @@ def sub_arr_sum(lst, s):
     return curr_sum == s
 
 
-print(sub_arr_sum([15, 2, 4, 8, 9, 5, 10, 23], 11))
+print(sub_arr_sum([15, 2, 9, 5, 10, 23], 11))
