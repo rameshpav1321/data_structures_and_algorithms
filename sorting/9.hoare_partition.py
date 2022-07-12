@@ -17,4 +17,4 @@ def hoare_partition(lst, low, high):
         lst[i], lst[j] = lst[j], lst[i]
 
 
-hoare_partition([5, 3, 8, 4, 2, 7, 1, 10], 0, 7)
+hoare_partition([0, 1, 2, 0], 0, 3)
