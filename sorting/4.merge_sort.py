@@ -13,6 +13,6 @@ def merge_sort(lst, left, right):
 
 
 if __name__ == "__main__":
-    lst = [10, 5, 30, 15, 7]
-    merge_sort(lst, 0, 4)
+    lst = [10, 5, 30, 15, 7, 30]
+    merge_sort(lst, 0, 5)
     print(lst)

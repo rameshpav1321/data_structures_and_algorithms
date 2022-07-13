@@ -14,11 +14,8 @@ def move_zeros(lst):
     temp = 0
     for i in range(len(lst)):
         if lst[i] != 0:
-            temp = lst[i]
-            lst[i] = lst[index]
-            lst[index] = temp
+            lst[i], lst[index] = lst[index], lst[i]
             index += 1
-
     return lst
 
 

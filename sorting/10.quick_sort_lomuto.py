@@ -17,4 +17,4 @@ def quick_sort(lst, low, high):
     return lst
 
 
-print(quick_sort([8, 4, 7, 9, 3, 10, 5], 0, 6))
+print(quick_sort([8, 4, 7, 7, 3, 10, 5], 0, 6))
