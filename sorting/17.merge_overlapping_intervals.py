@@ -22,4 +22,4 @@ def merge_intervals(intervals):
     print(intervals[:res+1])
 
 
-merge_intervals([[1, 3], [2, 6], [8, 10], [15, 18]])
+merge_intervals([[1, 3], [2, 6], [15, 18], [8, 10]])
