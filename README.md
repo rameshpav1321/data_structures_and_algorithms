@@ -1,3 +1,5 @@
 # data_structures_and_algorithms
 
-This repo contains solutions in python for DSA course on GeeksforGeeks platform.
+This repo contains the problems I have solved on my learning journey of DSA in python.
+
+Each problem is organized in folder named after the topic coverd.
