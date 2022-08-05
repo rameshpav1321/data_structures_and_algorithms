@@ -13,7 +13,7 @@ def transpose_matrix(mat, rows, columns):
     # res = [[0]*rows for _ in range(columns)]
     # for i in range(rows):
     #     for j in range(columns):
-    #         res[j][i] = mat[i][j]
+    #         # res[j][i] = mat[i][j]
     print(list(map(list, zip(*mat))))
 
 
