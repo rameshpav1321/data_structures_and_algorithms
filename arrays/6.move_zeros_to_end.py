@@ -9,9 +9,21 @@
 #     return lst
 
 
+# def moveZeroes(self, lst: List[int]) -> None:
+#         index=0
+#         temp=float('inf')
+#         for i in range(len(lst)):
+#             if lst[i]!=0:
+#                 lst[index],lst[i]=lst[i],lst[index]
+#                 index+=1
+#             else:
+#                 if temp!=0:
+#                     index=i
+#                     temp=0
+#         return lst
+
 def move_zeros(lst):
     index = 0
-    temp = 0
     for i in range(len(lst)):
         if lst[i] != 0:
             lst[i], lst[index] = lst[index], lst[i]
