@@ -35,20 +35,34 @@ class LinkedList:
         if key<1 or self.head==None:
             return
         curr_node=self.head
-        while curr_node.data!=key:
-            temp_node=curr_node
-            curr_node=curr_node.next
-        if curr_node.next:
-            temp_node.next=curr_node.next
+        if curr_node.data==key:
+            self.head=curr_node.next
         else:
-            temp_node.next=None
-
+            while curr_node.data!=key:
+                temp_node=curr_node
+                curr_node=curr_node.next
+            if curr_node.next:
+                temp_node.next=curr_node.next
+            else:
+                temp_node.next=None
     def print_llist(self):
         temp_node=self.head
         while temp_node!=None:
             print(temp_node.data,end='->')
             temp_node=temp_node.next
         print('Null')
+    def search_node(self,key):
+        position=1
+        if self.head:
+            curr_node=self.head
+        else:
+            return -1
+        if curr_node.data==key:
+            return position
+        while curr_node.data!=key and curr_node.next!=None:
+            curr_node=curr_node.next
+            position+=1
+        return -1
 
 if __name__=="__main__":
     llist=LinkedList()
@@ -60,5 +74,7 @@ if __name__=="__main__":
     llist.add_node(Node(6))
     llist.add_node(Node(7))
     llist.add_node(Node(8))
-    llist.delete_node(4)
+    llist.delete_node(5)
     llist.print_llist()
+    print(llist.search_node(9))
+    
