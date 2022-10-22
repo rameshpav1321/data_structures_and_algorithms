@@ -1,14 +1,15 @@
 def function(lst):
-    min_ele=lst[0]
-    max_sum=lst[1]-lst[0]
+    res=1
+    count=1
     for i in range(1,len(lst)):
-      min_ele=min(min_ele,lst[i-1])
-      max_sum=max(max_sum,lst[i]-min_ele)
-    if max_sum>=0:
-      return max_sum
-    else:
-      return -1
+      if (lst[i]%2==0 and lst[i-1]%2!=0) or (lst[i]%2!=0 and lst[i-1]%2==0):
+        count+=1
+        res=max(res,count)
+      else:
+        count=1
+    return res
 
 
 
-print(function([30,10,8,2]))
+
+print(function([5, 10, 20, 6, 3, 8]))

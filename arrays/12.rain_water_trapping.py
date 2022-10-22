@@ -9,6 +9,7 @@ def rain_water_trap(lst):
         l_max.append(max(lst[i], l_max[i-1]))
         r_max.append(max(lst[n-1-i], r_max[i-1]))
     r_max.reverse()
+    print(l_max)
     for i in range(1, n):
         trapped_water += min(l_max[i], r_max[i])-lst[i]
 

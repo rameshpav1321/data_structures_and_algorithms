@@ -1,6 +1,3 @@
-from re import I
-
-
 def second_largest(lst):
     first_largest = 0
     second_largest = 1
@@ -16,6 +13,8 @@ def second_largest(lst):
         return("There is no second largest element")
 
 
-if __name__ == "__main__":
-    lst = list(map(int, input("enter the values for the list: ").split()))
-    print(second_largest(lst))
+print(second_largest([1,5,4,5]))
+
+# if __name__ == "__main__":
+#     lst = list(map(int, input("enter the values for the list: ").split()))
+#     print(second_largest(lst))

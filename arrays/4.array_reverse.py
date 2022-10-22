@@ -1,6 +1,6 @@
-def array_reverse(lst):
-    low_index = 0
-    high_index = len(lst)-1
+def array_reverse(lst,low_index,high_index):
+    # low_index = 0
+    # high_index = len(lst)-1
     temp = 0
     for i in range(len(lst)//2):
         temp = lst[low_index]
@@ -13,4 +13,4 @@ def array_reverse(lst):
 
 if __name__ == "__main__":
     lst = list(map(int, input("enter the values for the list: ").split()))
-    print(array_reverse(lst))
+    print(array_reverse(lst,0,len(lst)-1))
