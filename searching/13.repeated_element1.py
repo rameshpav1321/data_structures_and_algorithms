@@ -24,7 +24,7 @@ def repeated_element(lst):
         one_jmp = lst[one_jmp]
         one_jmp_left = lst[one_jmp_left]
         if one_jmp_left == one_jmp:
-            return lst[one_jmp_left]
+            return one_jmp_left
 
 
 print(repeated_element([2, 3, 8, 5, 6, 6, 4, 1, 7]))

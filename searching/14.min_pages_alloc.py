@@ -1,19 +1,13 @@
 def min_pages_alloc(lst, stud):
-    le = len(lst)
-    sum = 0
-    arr_mx = 0
-    for i in range(le):
-        sum += lst[i]
-        arr_mx = max(lst[i], arr_mx)
-    low = arr_mx
-    high = sum
+    arr_mx,arr_sum=max(lst),sum(lst)
+    low,high=arr_mx,arr_sum
     res = 0
     while low <= high:
         # print(low, high)
         mid = (low+high)//2
         stud_aux = 1
         sum_aux = 0
-        for i in range(le):
+        for i in range(len(lst)):
             if sum_aux+lst[i] > mid:
                 stud_aux += 1
                 sum_aux = lst[i]
