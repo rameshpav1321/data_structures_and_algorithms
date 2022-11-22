@@ -17,6 +17,7 @@ def merge_sorted(lst, low, mid, high):
             lst[k] = lst2[j]
             j += 1
             k += 1
+    # print(lst)
     while i < len(lst1):
         lst[k] = lst1[i]
         i += 1
@@ -28,4 +29,4 @@ def merge_sorted(lst, low, mid, high):
     # print(lst)
 
 
-merge_sorted([5, 10, 30, 7, 15], 0, 2, 4)
+merge_sorted([1, 2, 3, 2, 5,6], 0, 2, 5)
