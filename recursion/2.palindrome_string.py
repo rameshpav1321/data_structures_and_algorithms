@@ -1,10 +1,7 @@
-from operator import truediv
-
-
 def is_palindrome(str, strt, end):
     if strt >= end:
         return True
-    return ((str[strt] == str[end]) & is_palindrome(str, strt+1, end-1))
+    return ((str[strt] == str[end]) and is_palindrome(str, strt+1, end-1))
 
 
 if __name__ == "__main__":
