@@ -25,6 +25,27 @@ class DoublyLinkedList:
                 curr_node=curr_node.prev             
         else:
             return "Referenced non existing list"
+    def del_head(self):
+        if self.head:
+            if self.head.next==None:
+                self.head=None
+            else:
+                self.head=self.head.next
+                self.head.prev=None
+        else:
+            return
+    def del_tail(self):
+        if self.head:
+            if self.head.next==None:
+                self.head=None
+            else:
+                curr_node=self.head
+                while curr_node.next!=None:
+                    curr_node=curr_node.next
+                curr_node.prev.next=None
+        else:
+            return
+    
     def print_dllist(self):
         temp_node=self.head
         while temp_node!=None:
