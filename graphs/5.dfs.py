@@ -1,10 +1,9 @@
 def dfs(adj_list,vert,visited):
-    if visited[vert]:
-        return
     visited[vert]=True
     print(vert)
-    for i in range(len(adj_list[vert])):
-        dfs(adj_list,adj_list[vert][i],visited)
+    for node in adj_list[vert]:
+        if not visited[node]:
+            dfs(adj_list,node,visited)
 
 if __name__=="__main__":
     visited=[False]*5
