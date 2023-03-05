@@ -12,3 +12,5 @@ def topological_sort(adj_list):
         if not visited[i]:
             dfs(adj_list,i,visited,stack)
     print(stack)
+
+topological_sort([[1],[2,3],[0],[4],[]])

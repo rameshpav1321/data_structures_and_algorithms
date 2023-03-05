@@ -12,4 +12,4 @@ def adjacency_list(lst,vert):
     add_edge(adj_list, 1, 3); 
     return adj_list
 
-adjacency_list([0,1,2,3,4],5)
+print(adjacency_list([0,1,2,3,4],5))
